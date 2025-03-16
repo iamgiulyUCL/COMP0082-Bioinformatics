@@ -1,0 +1,72 @@
+✓ Step 1: Understanding the Problem and Defining Your Approach
+- Goal: Predict the subcellular location of eukaryotic proteins into five categories: Cytosolic, Extracellular/Secreted, Nuclear, Mitochondrial, and Other.
+- Model Requirements:
+    - Output a predicted category with a confidence measure (High, Medium, Low).
+    - Perform cross-validation and assess accuracy, F1-score, and MCC.
+- Model Selection:
+    - Choose an appropriate model (e.g., neural networks, SVMs, decision trees).
+    - Start with simple models like decision trees or logistic regression.
+    - Consider interpretability using methods like decision trees or feature importance techniques.
+
+Step 2: Feature Engineering
+- Extract Features from Protein Sequences:
+    - Sequence Length
+    - Amino Acid Composition (overall and local)
+    - Isoelectric Point & Molecular Weight
+    - Sequence Motifs
+- Encode Protein Sequences:
+    - Convert sequences into numerical representations (e.g., one-hot encoding, PSSM, embeddings like ProtBERT).
+    - Use basic features like amino acid frequencies or physicochemical properties for traditional ML approaches.
+- Data Preprocessing:
+    - Clean and prepare data.
+    - Normalize or standardize numerical features if required.
+
+Step 3: Model Selection and Training
+- Split data into training and validation sets.
+- Train the model using engineered features.
+- Use Scikit-learn for traditional models or TensorFlow/PyTorch for neural networks.
+- Tune hyperparameters using grid search or random search.
+
+Step 4: Confidence Estimation
+- Generate confidence scores:
+    - Use probability of the predicted class for SVMs or decision trees.
+    - Use softmax layer output for neural networks.
+- Classify Confidence:
+    - Define thresholds for confidence levels (e.g., >0.8 = High, 0.5-0.8 = Medium, ≤0.5 = Low).
+
+Step 5: Evaluate Your Model
+- Evaluate performance using:
+    - Accuracy (ACC)
+    - F1-Score
+    - Matthews Correlation Coefficient (MCC)
+    - Confusion Matrix
+- Perform ablation studies to analyze feature importance (optional).
+
+Step 6: Final Predictions on Challenge Test Set
+- Test on the "blind" challenge set.
+- Predict subcellular location and confidence score for each protein.
+- Format results as specified in the coursework description.
+
+Step 7: Write the Report
+- Introduction:
+    - Describe the problem and its importance.
+    - Introduce subcellular locations and task goal.
+- Methodology:
+    - Explain chosen model and feature derivation.
+    - Describe training process and evaluation metrics.
+- Results:
+    - Present model results with graphs and tables.
+    - Include blind test set results with confidence levels.
+- Discussion:
+    - Interpret results and analyze model performance.
+    - Discuss strengths, weaknesses, and potential improvements.
+- Conclusion:
+    - Summarize findings and suggest future work.
+- Appendix (optional):
+    - Include supplementary materials (e.g., technical summary of code).
+
+Step 8: Submit the Coursework
+- Finalize the report (around 2500 words).
+- Prepare code and data for submission.
+- Ensure reproducibility without an internet connection.
+- Submit report and code as per guidelines.
