@@ -2,7 +2,8 @@
 
 ## Overview
 
-This project involves developing a machine learning model to predict the subcellular location of eukaryotic protein sequences. The goal is to classify proteins into five categories:
+This project is part of a coursework for the Bioinformatic Module @ UCL. It is developed during the MSc Artificial Intelligence for Biomedicine and Healthcare.
+The work involves developing a machine learning model to predict the subcellular location of eukaryotic protein sequences. The goal is to classify proteins into five categories:
 
 - **Cytosolic**: Inside the cell, but not in organelles.
 - **Extracellular/Secreted**: Proteins secreted outside the cell.
@@ -35,5 +36,5 @@ A **blinded challenge set** with 20 sequences will also be provided for final te
 3. **Model Training**: Train the model using cross-validation on the provided dataset and evaluate performance using metrics like **Accuracy**, **F1 Score**, and **MCC**.
   
 4. **Blinded Challenge**: Predict subcellular locations for the blinded challenge sequences, including confidence levels (High, Medium, Low).
-
+gi
 5. **Report**: Submit a detailed report (2500 words max) discussing the problem, methodology, results, and analysis. Include a table of predictions for the blinded challenge.
