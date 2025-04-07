@@ -18,5 +18,3 @@ Develop a model that classifies protein sequences into the above categories.
 ## Data
 
 The protein sequences are provided in **Fasta format** and categorized with the above classes, one file for each class.
-
-A **blinded challenge set** with 20 sequences will also be provided for final testing.
